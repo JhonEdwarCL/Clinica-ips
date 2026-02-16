@@ -1,0 +1,15 @@
+package model;
+
+import enums.Rol;
+
+public class Medico extends Usuario {
+
+    public Medico(String nombre, String cedula) {
+        super(nombre, cedula, Rol.MEDICO);
+    }
+
+    @Override
+    public void mostrarInfo() {
+        System.out.println("Médico: " + nombre);
+    }
+}
